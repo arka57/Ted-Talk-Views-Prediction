@@ -34,21 +34,23 @@ The dataset contains features like:<br>
 **Target Variable** :<br>
 **views**: Contains Count of views of every talk
 
-
+**Approach**<br>
 Firstly EDA was performed on data to gain insights followed by Feature Engineering to remove unrelated columns and make it apt for model. Various models were tried upon the dataset such as Linear Regression and tree based models like Decision Tree, Random Forest. To reduce overfitting hyperparameter tuning was applied on each of the models to enhance the output of the model.<br><br>
+
 **Results**:Random Forest with regularization using GridSearch performed the best among the models with least overfitting. Due to training time resource constraint XGBoost was not applied. The result were evaluated on various parameters like MSE,MSRT and R2 scores
 
 **Scores**<br>
-**Model**: Linear Regression<br><br>
+**Model**: Linear Regression<br>
                                      
 |  Metric   | Training Score|  Testing Score |          
 |-----------|---------------|----------------|            
 |MSE        |  0.12010      |    0.12392     |         
 |MSRT       |  0.34656      |    0.35202     |   
 |R2         |  0.28532      |    0.29001     |  
-<br>                    
+<br> 
+
 **Scores**<br>
-**Model**: L1 Regression<br><br>
+**Model**: L1 Regression<br>
                                      
 |  Metric   | Training Score|  Testing Score |          
 |-----------|---------------|----------------|            
@@ -58,16 +60,7 @@ Firstly EDA was performed on data to gain insights followed by Feature Engineeri
 <br>
 
 **Scores**<br>
-**Model**: L2 Regression<br><br>
-                                     
-|  Metric   | Training Score|  Testing Score |          
-|-----------|---------------|----------------|            
-|MSE        |  0.12010      |    0.12392     |         
-|MSRT       |  0.34656      |    0.35202     |   
-|R2         |  0.28532      |    0.29001     |  
-<br>
-**Scores**<br>
-**Model**: Decision Tree<br><br>
+**Model**: L2 Regression<br>
                                      
 |  Metric   | Training Score|  Testing Score |          
 |-----------|---------------|----------------|            
@@ -77,7 +70,17 @@ Firstly EDA was performed on data to gain insights followed by Feature Engineeri
 <br>
 
 **Scores**<br>
-**Model**: Random Forest<br><br>
+**Model**: Decision Tree<br>
+
+|  Metric   | Training Score|  Testing Score |          
+|-----------|---------------|----------------|            
+|MSE        |  0.12010      |    0.12392     |         
+|MSRT       |  0.34656      |    0.35202     |   
+|R2         |  0.28532      |    0.29001     |  
+<br>
+
+**Scores**<br>
+**Model**: Random Forest<br>
                                      
 |  Metric   | Training Score|  Testing Score |          
 |-----------|---------------|----------------|            
