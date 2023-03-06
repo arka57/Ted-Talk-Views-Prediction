@@ -74,9 +74,9 @@ Firstly EDA was performed on data to gain insights followed by Feature Engineeri
 
 |  Metric   | Training Score|  Testing Score |          
 |-----------|---------------|----------------|            
-|MSE        |  0.12010      |    0.12392     |         
-|MSRT       |  0.34656      |    0.35202     |   
-|R2         |  0.28532      |    0.29001     |  
+|MSE        |  0.10720      |    0.12330     |         
+|MSRT       |  0.32742      |    0.35114     |   
+|R2         |  0.36206      |    0.29357     |  
 <br>
 
 **Scores**<br>
@@ -84,9 +84,9 @@ Firstly EDA was performed on data to gain insights followed by Feature Engineeri
                                      
 |  Metric   | Training Score|  Testing Score |          
 |-----------|---------------|----------------|            
-|MSE        |  0.12010      |    0.12392     |         
-|MSRT       |  0.34656      |    0.35202     |   
-|R2         |  0.28532      |    0.29001     |  
+|MSE        |  0.11141      |    0.11277     |         
+|MSRT       |  0.33379      |    0.33581     |   
+|R2         |  0.33701      |    0.35391     |  
 <br>
 
 <br>Further the model was deployed on AWS EC2 instance along with Dockerization
