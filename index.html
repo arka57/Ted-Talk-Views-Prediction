@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ted Talk Views Prediction</title>
+    </head>
+    <body>
+        <h1>Ted Talk Views Prediction</h1>
+        {% if result %}
+            <p>{{ result }}</p>
+        {% endif %}
+        <form method="post" action="/predict">
+            <label>Comments</label>
+            <input type="text" name="comments"><br><br>
+
+            <label>Duration</label>
+            <input type="text" name="duration"><br><br>
+
+            <label>Published Date</label>
+            <input type="text" name="p_date"><br><br>
+            
+            <label> Recorded Date</label>
+            <input type="text" name="r_date"><br><br>
+
+            <label>Available Languages Count</label>
+            <input type="text" name="alc"><br><br>
+
+            <input type="submit" name="Predict">
+        </form>
+    </body>
+</html>
