@@ -122,12 +122,12 @@ The dataset was divided in train and test set in the ratio of 80:20 .Various mod
 |Gradient Boosting | 13734743.9833      |                |                     |                 |                  |              |
 |XGBoosting        | 13734743.9833      |                |                     |                 |                  |              |
 
-
-
 <br>
+#**Conclusion**<br>
 
 <br>Further the model was deployed on AWS EC2 instance along with Dockerization
 
-**Tool and Technologies used**: Colab IDE,VSCode,AWS EC2,WinSCP,Putty,Docker
-<br>
-Further scope is train with XGBoost model on the dataset
+**Tool and Technologies used**: Colab IDE,VSCode,AWS EC2,WinSCP,Putty,Docker<br><br>
+**Further scope**<br>
+1) Applying NLP concepts to include title feature and check it's effect on views<br>
+2) Use Related topics feature of a video and use it in the prediction
