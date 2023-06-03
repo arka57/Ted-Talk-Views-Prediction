@@ -111,6 +111,19 @@ The dataset was divided in train and test set in the ratio of 80:20 .Various mod
 |MSE        |  32066615.0859 |    18117295.9294 |         
 |MSRT       |  5662.7391     |    4256.4416     |   
 |R2         |  0.4448        |    0.6201        |  
+
+| Model            | MSE Training Score |MSE Test Score  | MSRT Training Score | MSRT Test Score |R2 Training Score | R2 Test Score| 
+|------------------|--------------------|----------------|---------------------|-----------------|------------------|--------------|
+|Linear Regression | 13734743.9833      | 9048703.58288  |  3706.0415          |    2947.6568    |   0.7608         |     0.8102   | 
+|L1 Regression     |13811142.7076       |  8688681.1133      3716.3345        |     2947.6568                |                 |                  |              |
+|L2 Regression     | 13734743.9833      |                |                     |                 |                  |              |
+|Decision Tree     | 13734743.9833      |                |                     |                 |                  |              |
+|Random Forest     | 13734743.9833      |                |                     |                 |                  |              |
+|Gradient Boosting | 13734743.9833      |                |                     |                 |                  |              |
+|XGBoosting        | 13734743.9833      |                |                     |                 |                  |              |
+
+
+
 <br>
 
 <br>Further the model was deployed on AWS EC2 instance along with Dockerization
