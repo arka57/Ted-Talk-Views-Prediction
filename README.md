@@ -106,11 +106,11 @@ The dataset was divided in train and test set in the ratio of 80:20 .Various mod
 **Scores**<br>
 **Model**: Random Forest<br>
                                      
-|  Metric   | Training Score|  Testing Score |          
-|-----------|---------------|----------------|            
-|MSE        |  0.11141      |    0.11277     |         
-|MSRT       |  0.33379      |    0.33581     |   
-|R2         |  0.33701      |    0.35391     |  
+|  Metric   | Training Score |  Testing Score   |          
+|-----------|----------------|------------------|            
+|MSE        |  32066615.0859 |    18117295.9294 |         
+|MSRT       |  5662.7391     |    4256.4416     |   
+|R2         |  0.4448        |    0.6201        |  
 <br>
 
 <br>Further the model was deployed on AWS EC2 instance along with Dockerization
