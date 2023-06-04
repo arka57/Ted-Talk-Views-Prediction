@@ -2,7 +2,7 @@
 
 
 TED is devoted to spreading powerful ideas on just about any topic. Founded in 1984 by Richard Salman as a nonprofit organization that aimed at bringing experts from the fields of Technology, Entertainment, and Design together, TED Conferences have gone on to become the Mecca of ideas from virtually all walks of life<br>
-These dataset contain over 4,000 TED talks including transcripts in many languages and  main objective was to build a model for predicting  views generated for these events.<br>
+These dataset contain over 4,000 TED talks including transcripts in many languages and  main objective was to build a model for predicting  views generated for these events from thr dataset.<br>
 
 # **Dataset info**
 
@@ -63,71 +63,25 @@ The dataset was divided in train and test set in the ratio of 80:20 .Various mod
 # **Results**<br>
  Random Forest with regularization using GridSearch performed the best among the models with least overfitting. Due to training time resource constraint XGBoost was not applied. The result were evaluated on various parameters like MSE,MSRT and R2 scores<br>
 
-**Scores**<br>
-**Model**: Linear Regression<br>
-                                     
-|  Metric   | Training Score   |  Testing Score |          
-|-----------|------------------|----------------|            
-|MSE        |  13734743.9833   |  9048703.58288 |         
-|MSRT       |  3706.0415       |  3008.1063     |   
-|R2         |  0.7622          |  0.8102        |  
-<br> 
 
-**Scores**<br>
-**Model**: L1 Regression<br>
-                                     
-|  Metric   | Training Score  |  Testing Score  |          
-|-----------|-----------------|-----------------|            
-|MSE        |  13811142.7076  |    8688681.1133 |         
-|MSRT       |  3716.3345      |    2947.6568    |   
-|R2         |  0.7608         |    0.8178       |  
-<br>
+# **Scores**<br>
 
-**Scores**<br>
-**Model**: L2 Regression<br>
-                                     
-|  Metric   | Training Score |  Testing Score  |          
-|-----------|----------------|-----------------|            
-|MSE        |  13764151.3081 |    8907230.4988 |         
-|MSRT       |  3710.0069     |    2984.4983    |   
-|R2         |  0.7616        |    0.8132       |  
-<br>
-
-**Scores**<br>
-**Model**: Decision Tree<br>
-
-|  Metric   | Training Score |  Testing Score   |          
-|-----------|----------------|------------------|            
-|MSE        |  11233973.1642 |    18367479.3015 |         
-|MSRT       |  3351.7119     |    4285.7297     |   
-|R2         |  0.8054        |    0.6149        |  
-<br>
-
-**Scores**<br>
-**Model**: Random Forest<br>
-                                     
-|  Metric   | Training Score |  Testing Score   |          
-|-----------|----------------|------------------|            
-|MSE        |  32066615.0859 |    18117295.9294 |         
-|MSRT       |  5662.7391     |    4256.4416     |   
-|R2         |  0.4448        |    0.6201        |  
-
-| Model            | MSE Training Score |MSE Test Score  | MSRT Training Score | MSRT Test Score |R2 Training Score | R2 Test Score| 
+| **Model**        | **MSE Training Score** |**MSE Test Score**  | **MSRT Training Score** | **MSRT Test Score**|**R2 Training Score** | **R2 Test Score**| 
 |------------------|--------------------|----------------|---------------------|-----------------|------------------|--------------|
-|Linear Regression | 13734743.9833      | 9048703.58288  |  3706.0415          |    2947.6568    |   0.7608         |     0.8102   | 
-|L1 Regression     |13811142.7076       |  8688681.1133      3716.3345        |     2947.6568                |                 |                  |              |
-|L2 Regression     | 13734743.9833      |                |                     |                 |                  |              |
-|Decision Tree     | 13734743.9833      |                |                     |                 |                  |              |
-|Random Forest     | 13734743.9833      |                |                     |                 |                  |              |
-|Gradient Boosting | 13734743.9833      |                |                     |                 |                  |              |
-|XGBoosting        | 13734743.9833      |                |                     |                 |                  |              |
-
+|Linear Regression |     13734743.9833               | 9048703.5828  |  3706.0415          |    3008.1063   |   0.7622         |     0.8102   | 
+|L1 Regression     |     13811142.7076  |  8688681.1133  |   3716.3345         |     2947.6568   |   0.7608         |  0.8178      |              
+|L2 Regression     |     13764151.3081  | 8907230.4988   |   3710.0069         |   2984.4983     | 0.7616           |0.8132        |
+|Decision Tree     |    11233973.1642   |  18367479.3015 |   3351.7119         | 4285.7297       | 0.8054           |  0.6149      |
+|Random Forest     |    2629275.8123    | 7230347.4333   |    1621.5041        | 2688.9305       |   0.9544         |   0.8484     |
+|Gradient Boosting |    459258.8654     |  8088584.9908  |  677.6864           | 2844.0437       |  0.9920          | 0.8304       |
+|XGBoosting        |   5734634.3142     | 11262460.5049  |  2394.7096          | 3355.9589       | 0.9007           | 0.7638       |
 <br>
-#**Conclusion**<br>
-
+**Conclusion**<br>
+Random Forest and XGBoosting are the two best performing models and R2 score above 0.9 was achieved by them. Hence Random Forest with hyperparameter tuning is the best  working model for the given problem
 <br>Further the model was deployed on AWS EC2 instance along with Dockerization
 
-**Tool and Technologies used**: Colab IDE,VSCode,AWS EC2,WinSCP,Putty,Docker<br><br>
-**Further scope**<br>
+# **Tool and Technologies used**<br>
+Colab IDE,VSCode,AWS EC2,WinSCP,Putty,Docker<br><br>
+# **Further scope**<br>
 1) Applying NLP concepts to include title feature and check it's effect on views<br>
 2) Use Related topics feature of a video and use it in the prediction
