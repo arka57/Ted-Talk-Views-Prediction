@@ -2,9 +2,10 @@
 
 
 TED is devoted to spreading powerful ideas on just about any topic. Founded in 1984 by Richard Salman as a nonprofit organization that aimed at bringing experts from the fields of Technology, Entertainment, and Design together, TED Conferences have gone on to become the Mecca of ideas from virtually all walks of life<br>
-These dataset contain over 4,000 TED talks including transcripts in many languages and  main objective was to build a model for predicting  views generated for these events from thr dataset.<br>
+These project is aimed at developing a predictive model that will predict the number of views of a TED Talks event in YouTube. Have used a dataset containing details of 4,000 past TED talks including transcripts in many languages and developed various machine learning models.<br>
 
 # **Dataset info**
+
 
 Number of records: 4,005<br>
 Number of attributes: 19<br>
